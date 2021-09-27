@@ -9,25 +9,25 @@
                 <h3 class="login-heading mb-4">Registro</h3>
   
                 <!-- Sign In Form -->
-                <form>
+                <form [formGroup]="formData" (ngSubmit)="registro()">
                   <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" formControlName="registro_academico" name="registro_academico">
                     <label for="floatingInput">Registro Académico</label>
                   </div>
                   <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" formControlName="nombre" name="nombre">
                     <label for="floatingInput">Nombre</label>
                   </div>
                   <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" formControlName="apellido" name="apellido">
                     <label for="floatingInput">Apellido</label>
                   </div>
                   <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" formControlName="correo" name="correo">
                     <label for="floatingInput">Correo</label>
                   </div>
                   <div class="form-floating mb-3">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" formControlName="password" name="password">
                     <label for="floatingPassword">Password</label>
                   </div>
   
