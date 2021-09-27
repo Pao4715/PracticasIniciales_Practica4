@@ -18,6 +18,15 @@
               <li><a class="dropdown-item" routerLink="registro">Registro</a></li>
             </ul>
           </li>
+          <li class="nav-item dropdown" *ngIf="usuario">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Navegacion
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" routerLink="home">Publicaciones</a></li>
+              <li><a class="dropdown-item" routerLink="cursos">Cursos Aprobados</a></li>
+            </ul>
+          </li>
         </ul>
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">

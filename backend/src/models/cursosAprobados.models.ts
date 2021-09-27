@@ -15,7 +15,7 @@ const Cursos = db.define('Cursos', {
         type: DataTypes.STRING,
         allowNull: false,
     },
-    fecha_hora: {
+    fecha: {
         type: DataTypes.DATE,
         allowNull: false,
     },

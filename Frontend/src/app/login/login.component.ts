@@ -39,6 +39,7 @@ export class LoginComponent implements OnInit {
       })
       this.router.navigate(['home'])
       console.log(res)
+      localStorage.setItem('usuarioId', res.id)
     }, (error) => {
       Swal.fire({
         icon: 'error',

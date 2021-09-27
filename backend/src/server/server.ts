@@ -1,6 +1,7 @@
 import express = require('express');
 import path = require('path');
 import db from '../db/connection';
+import cursosAprobados from '../routes/cursosAprobados.routes';
 import publicacion from '../routes/publicacion.routes';
 import usuario from '../routes/usuario.routes';
 
@@ -78,6 +79,7 @@ export default class Server {
         const api:string = "/api/"
         this.app.use(api, usuario);
         this.app.use(api, publicacion);
+        this.app.use(api, cursosAprobados);
     }
 
     /**
